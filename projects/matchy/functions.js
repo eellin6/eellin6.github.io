@@ -15,17 +15,22 @@
 function search(array, string){
  for (let i = 0; i < array.length; i++) {
      if(array[i].name.toLowerCase() === string.toLowerCase()) {
+      //loops through the array of annimals and finds out if their name is equal to string
+      //use .toLowerCase for both array and string so finding them is case sensitive
      return array[i];
+     //return the animal from array that matches the string
      }
  }
  for (let i = 0; i < array.length; i++) {
   if(array[i].name.toLowerCase() !== string.toLowerCase()) {
+   // if the string sent through does not equal the string the computer will just return null
+   //uses its own for loop
    return null;
   }
  }
 }
 
-search(animals, string);
+
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -46,8 +51,11 @@ function replace (array, string, replace) {
 //////////////////////////////////////////////////////////////////////
 function remove (array, string) {
  for (let i = 0; i < array.length; i++) {
+  //looping through array
   if(array[i].name.toLowerCase() === string.toLowerCase()) {
+   //making sure it is case insensitive and that the name === the string passed through
    return array.splice(i, 1);
+   //removing the name that matches with splice index[i] and removing 1
 }
 }
 }

@@ -7,7 +7,7 @@
  *    
  * 1. Scope can be local or global in JS.
  *
- * 2. The three main declarations for variables are var, let, const. There breakdown is as follows
+ * 2. The three main declarations for variables are var, let, const that have different rules for scope. There breakdown is as follows
  *      VAR:
  *          -reassignable: yes
  *          -hoisted: yes
@@ -33,7 +33,7 @@
  * Defines a scope for variables declared.
  */
 if(true) {
-    //if block scopoe
+    //if block scope
     const message = "hello";
     console.log(message);// 'hello'
 }

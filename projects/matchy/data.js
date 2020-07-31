@@ -77,21 +77,21 @@ var duck = {        //Step 6/4 creat duck animal
     species: 'duck',
     name: 'Quackers',
     noises: ['quack', 'honk', 'sneeze', 'woosh']
-}
+};
 animals.push(duck);// push duck into animals
 
 var bear = {
     species: 'bear',
     name: 'Grizzy',
     noises: ['GRRR', 'ARRG']
-}
+};
 animals.push(bear);// push bear into animals
 
 var mouse = {
     species: 'mouse',
     name: 'Caroline',
     noises: ['squeek!', 'yummm']
-}
+};
 animals.push(mouse);// push mouse into animals
 
 console.log(animals);
@@ -101,9 +101,8 @@ console.log(animals.length);
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-var friends = [];
-// chosing a collection: 
 // chose this data structure because we are using arrays that have objects in them
+var friends = [];
 function getRandom(array) {
    let randomFriends = animals[Math.floor(Math.random() * animals.length)];
     //use math random that takes our animals array and returns a random index of the input array
