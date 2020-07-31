@@ -19,7 +19,7 @@
 * appear later in the code
 */
 
-const sum = add(1,1;)
+//const sum = add(1,1;)
 console.log(sum);// returns 2
 function add(numOne, numTwo){
     return numOne + numTwo;
@@ -29,8 +29,8 @@ function add(numOne, numTwo){
 /*
 * Formed when an anonymous Function is assigned to a variable or constant
 */
-const sum = add(1,1);
-const add = function (numOne, numTwo) {
+const sum = plus(1,1);
+const plus = function (numOne, numTwo) {
     return numOne + numTwo;
 } // prints 2
 
