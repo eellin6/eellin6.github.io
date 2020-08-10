@@ -187,14 +187,8 @@ for(let i = 0; i < array.length; i++) {
 //////////////////////////////////////////////////////////////////////
 
 function dedup(array) {
-let newArray = [];
-for(let i = 0; i < array.length; i++){
-  if(array[i] === array[i]){
-    delete array[i];
-  }
-}
-
-newArray.push(array);
+let uniqueChars = [...new Set(array)];
+return uniqueChars;
 }
 
 //////////////////////////////////////////////////////////////////////

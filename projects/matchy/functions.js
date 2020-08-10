@@ -74,6 +74,7 @@ function add (animals, animal) {
          if(animals[i].name.toLowerCase() === animal.name.toLowerCase())  { 
             return null; //graceful exit.  no addition
         } else if (animal.name.length > 0 && animal.species.length > 0) {
+         //
         animals.push(animal); //
     }
   }
